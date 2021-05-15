@@ -67,7 +67,7 @@ function jh_mehod_calc(){
             
         }
         console.log(`Iteration:${counter} base point: ${base_processing_result} a:${a} b:${b} h:${h} ah:${a_h} b:${b_h} h:${h}`);
-        document.getElementById('res').innerHTML+=(`Iteration:${counter} base point: ${base_processing_result} a:${a} b:${b} h:${h} ah:${a_h} b:${b_h} h:${h}<br>`);
+        document.getElementById('res').innerHTML+=(`Iteration:${counter}     base point: ${base_processing_result}     a:${a}     b:${b}     h:${h}     ah:${a_h}     b:${b_h}     h:${h}<br>`);
         counter++;
     } while (h > eps);
     
