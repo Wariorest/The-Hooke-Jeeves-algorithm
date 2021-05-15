@@ -44,10 +44,11 @@ function p_i_calc(x, x0) {
     return x0 + 2 * (x - x0);
 }
 
-
+let base_processing_result;
 
 function jh_mehod_calc(){
-    
+    let counter = 1;
+    base_processing_result = calculate(a, b);
     do {
         if (a == a_h && b == b_h) {
             next_ai_calc(a, b, base_processing_result);
@@ -65,8 +66,13 @@ function jh_mehod_calc(){
             b_h = b;
             
         }
-        console.log(`base point: ${base_processing_result} a:${a} b:${b} h:${h} ah:${a_h} b:${b_h} h:${h}`);
+        console.log(`Iteration:${counter} base point: ${base_processing_result} a:${a} b:${b} h:${h} ah:${a_h} b:${b_h} h:${h}`);
+        document.getElementById('res').innerHTML+=(`Iteration:${counter} base point: ${base_processing_result} a:${a} b:${b} h:${h} ah:${a_h} b:${b_h} h:${h}<br>`);
+        counter++;
     } while (h > eps);
+    
 }
-let base_processing_result = calculate(a, b);
-jh_mehod_calc();
+
+
+
+

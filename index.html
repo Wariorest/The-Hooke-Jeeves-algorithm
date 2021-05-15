@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Hooke — Jeeves method</title>
 </head>
 <body>
+    <div class="container">
+        <header class="header">
+            <h1>Hooke — Jeeves method</h1>
+        </header>
+        <div class="calculate" >
+            <div class="function">
+                f(x) = 6 * (x - y) - 3 * x<sup>2</sup> - 3 * y<sup>2</sup>
+            </div>
+            <button onclick="jh_mehod_calc()" class="jh_calc_button">Calculate Hooke — Jeeves method</button>
+            <hr>
+            <div class="result">
+                <p>Result: <p id="res"></p></p>
+            </div>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
