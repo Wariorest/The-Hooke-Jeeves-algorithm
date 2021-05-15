@@ -1,0 +1,1 @@
+For use calculator u should open 'index.html' file in any browser
