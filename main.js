@@ -70,7 +70,7 @@ function jh_mehod_calc(){
         document.getElementById('res').innerHTML+=(`Iteration:${counter} base point: ${base_processing_result} a:${a} b:${b} h:${h} ah:${a_h} b:${b_h} h:${h}<br>`);
         counter++;
     } while (h > eps);
-    
+    document.getElementById('res').innerHTML+=(`<hr><div class="function">f(x) = 6 * (x - y) - 3 * x<sup>2</sup> - 3 * y<sup>2</sup> = ${Math.round(base_processing_result)}</div>`);
 }
 
 
