@@ -5,6 +5,13 @@ let a = 3;
 let b = 3;
 let a_h = a;
 let b_h = b;
+let eps_out_page = (epssilon)=>{
+    let eps_show = document.getElementsByClassName('eps');
+    let eps_data = eps_show[0];
+    eps_data.innerHTML+=`Epsilon =${epssilon}`;
+}
+
+eps_out_page(eps);
 
 function calculate(x, y) {
     return 6 * (x - y) - 3 * (Math.pow(x, 2)) - 3 * (Math.pow(y, 2));
